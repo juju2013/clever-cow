@@ -17,6 +17,6 @@ const (
 )
 
 func initConfigDir() {
-	home := os.Getwd()
+	home, _ := os.Getwd()
 	configPath.dir = path.Join(home, "conf")
 }
