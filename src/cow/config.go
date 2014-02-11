@@ -15,8 +15,8 @@ import (
 )
 
 const (
-	version           = "0.9.1"
-	defaultListenAddr = "127.0.0.1:7777"
+	version           = "0.9.1-CC"
+	defaultListenAddr = "0.0.0.0:8080"
 )
 
 type LoadBalanceMode byte

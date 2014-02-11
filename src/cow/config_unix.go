@@ -3,6 +3,7 @@
 package main
 
 import (
+	"os"
 	"path"
 )
 
@@ -16,6 +17,6 @@ const (
 )
 
 func initConfigDir() {
-	home := getUserHomeDir()
-	configPath.dir = path.Join(home, ".cow")
+	home := os.Getwd()
+	configPath.dir = path.Join(home, "conf")
 }
